@@ -1,0 +1,67 @@
+.background{
+    background-image: url("/assets/img/github-social.png");
+    height: 556px;
+}
+
+.search-repo{
+    width: 50%;
+    height: 33px;
+    background-color: white;
+    border-radius: 33px;
+}
+.search{
+  margin: auto;
+  width: 63%;
+  padding: 194px 0 20px;
+  font-family: "Times New Roman", sans-serif;
+}
+.search input{
+    font-size: 18px;
+}
+.search label{
+    display: block; 
+    margin: -30px 0 25px 18px; 
+    font-size: 25px;
+    font-family: monospace;
+    color: bisque;
+    font-weight: bolder;
+}
+input{
+    font-family: "Times New Roman", sans-serif;
+    font-size: 15px;
+}
+.mat-toolbar.mat-primary {
+    background: #666d96
+  }
+.list-of-repos{
+    background-color: white;
+    margin: 10px 327px 10px 0px;
+    width: 100px;
+    padding: 10px 105px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 52%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+    position: absolute;
+    z-index: 1;
+    right: 495px;
+    padding: 9px;
+}
+  
+.input-field {
+    width: 100%;
+    padding: 10px;
+    padding: 4px 27px;
+}
+

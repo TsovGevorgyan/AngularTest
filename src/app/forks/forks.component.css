@@ -1,0 +1,11 @@
+table{
+    background-color: #deb39612;
+}
+table thead{
+    background-color: #7b84aa;
+    font-size: 17px;
+    color: white;
+}
+.mat-toolbar.mat-primary {
+    background: #666d96
+}

@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+    <div fxHide.gt-xs>
+      <button mat-icon-button>
+       <mat-icon>menu</mat-icon>
+     </button>
+   </div>
+    <div>
+      <a style="color: white;">
+       List Of Repositories Forks
+      </a>
+    </div>
+</mat-toolbar>
+<div style="margin: 20px;">
+    <table class="striped" mat-table>
+        <thead>
+            <tr >
+                <th>Repository Name</th>
+                <th>Owner</th>
+                <th>Link of Fork</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = 'let repo of repositories | paginate: { itemsPerPage:8, currentPage: p}'>
+                <th>{{repo.full_name | titlecase}}</th>
+                <th>{{repo.owner.login | uppercase}}</th>
+                <th><a href="{{repo.forks_url}}">{{repo.forks_url}}</a></th>
+            </tr>
+        </tbody>
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </table>
+</div>

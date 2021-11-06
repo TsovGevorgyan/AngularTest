@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+    <div fxHide.gt-xs>
+      <button mat-icon-button>
+       <mat-icon>menu</mat-icon>
+     </button>
+   </div>
+    <div>
+      <a style="color: white;">
+       List Of Repositories
+      </a>
+    </div>
+
+</mat-toolbar>
+<div class="background">
+    <div class="search">
+      <div style="margin: auto; width: 129%; padding: 0px 0px 20px 136px;">
+        <label for="search-repo">WHAT REPOSITORY ARE YOU LOOKING FOR?</label>
+        <div class="input-icons">
+          <mat-icon class="icon">search</mat-icon>
+          <input placeholder = 'Search Repository' id = 'search-repo' class = 'search-repo input-field' [(ngModel)] = 'name' data-lpignore="true" (keyup.enter) = 'getRepositoryInfo(name)'/>
+          <div [hidden] = "!response">
+            <ul *ngFor="let post of posts" >
+              <li style="text-align: center;"><a class = 'list-of-repos' routerLink = '/forks'>{{post}}</a></li>
+            </ul>
+          </div>
+          <p [hidden] = "response">Did Not MatchAny Repository</p>
+        </div>
+      </div>
+    </div>
+</div>
+
